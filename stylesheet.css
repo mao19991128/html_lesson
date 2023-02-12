@@ -1,0 +1,304 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.title {
+    width: 180px;
+    height: auto;
+    position: relative;
+    top:20px;
+    left:30px;
+}
+
+.firstview_sp {
+    display: none;
+}
+
+.firstview {
+    background-image:url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:600px;
+    width: 100%;
+}
+
+.menu {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: auto;
+    margin-right: 30px;
+    text-align: center;
+    font-size: small;
+}    
+
+.button {
+    text-decoration: none;
+    color:white;
+    background-color: #f79214;
+    padding: 25px;
+    border-radius: 38px;
+    position: relative;
+    bottom:50px;
+    right:15px;
+}
+
+.counseling {
+    position: fixed;
+    bottom:400px;
+    left:600px;
+    top:500px;
+    z-index: 100;
+}
+
+.main {
+    font-size: 35px;
+    font-weight: bold;
+    position: relative;
+    bottom:450px;
+    text-align: center;
+    right: 220px;
+}
+
+.right {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right:250px
+}
+
+.free {
+    text-align: right;
+}
+
+.link {
+    text-decoration: none;
+    color:white;
+    background-color: #f79214;
+    padding: 25px;
+    border-radius: 40px; 
+    position: relative;
+    bottom:400px;
+    left:80px
+}
+
+.document {
+    text-decoration: none;
+    color:black;
+    background-color:rgba(255, 255, 255, 0.078);
+    padding: 25px;
+    border-radius: 40px; 
+    border: 1px solid rgb(184, 172, 172) ;
+    position: relative;
+    bottom:400px;
+    left:80px;
+    }
+
+.circle {
+    position: relative;
+    bottom: 450px;
+    left: 50px;
+}
+
+.big {
+    width:200px;
+}
+
+.small {
+    width: 150px;
+    position: relative;
+    bottom: 30px;
+}
+
+.japanese {
+    font-weight: 600;
+    font-size: 10px;
+    position: relative;
+    bottom:10px;
+}
+
+.medium {
+    width:400px;
+    position: fixed;
+    right:100px
+}
+
+
+.background {
+    height: 500px;
+}
+
+.link:hover {
+    background-color: lightsalmon;
+}
+
+.button:hover {
+    background-color: lightsalmon;
+}
+
+.document:hover {
+    color:darkgray
+}
+
+.hamburger {
+    display: none;
+}
+
+.footer {
+    background-color: #f79214;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    bottom: 330px;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.video {
+    width:40%;
+    padding:30px;
+}
+
+.text {
+    width: 100%;
+    color: white;
+    text-align: center;
+    position: relative;
+    top:50px;
+}
+
+.explanation {
+    font-size:30px;
+    text-align: center;
+}
+
+.explanation_link {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width:1024px) {
+   .menu {
+        display: none;
+   }
+
+   .button {
+        display:none;
+   }
+
+   .header {
+        background-color: white;
+        width: 100%;
+        height:50px;
+        position:fixed !important;
+        top:0;
+        z-index:1;
+   }
+   
+   .hamburger {
+        display: block;
+        width: 40px;
+        height:32px;
+        position: fixed;
+        right:60px;
+        top:10px;
+        border:none;
+        background-color: white;
+   }
+
+   .hamburger_bar {
+        display:block;
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        left:0;
+        background-color: black;
+   }
+
+   .hamburger_bar:nth-child(1) {
+        top:0;
+   }
+   
+   .hamburger_bar:nth-child(2) {
+        top:50%;
+        transform: translateY(-50%);
+   }
+
+   .hamburger_bar:nth-child(3) {
+        top:100%;
+        transform: translateY(-100%);
+   }
+   .main{
+    left: 15px;
+   }
+ }
+
+ @media screen and (max-width: 599px) {
+    
+    .firstview {
+       background-image: none;
+       z-index: 1;
+    }
+
+    .firstview_sp {
+        display: block;
+        position: relative;
+        top: 30px;
+    }
+
+    .main {
+        z-index: 2;
+        top:30px;
+    }
+
+    .circle {
+        z-index: 2;
+        top:30px;
+        left:10px;
+        display: flex;
+    }
+
+    .link {
+        top:60px;
+        z-index: 2;
+    }
+
+    .document{
+        display: none;
+    }
+    
+    .medium {
+        right:35px;
+        width:90%;
+        bottom:0;
+    }
+
+    .footer {
+        width: 140%;
+        top:200px;
+        height: 800px;
+    }
+
+    .small {
+        top: 10px;
+    }
+
+    .video {
+        width:80%;
+        position: relative;
+        bottom:180px;
+    }
+    
+    .text {
+        position: relative;
+        right:400px;
+        top:400px;
+    }
+}
