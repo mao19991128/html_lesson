@@ -45,7 +45,7 @@ body {
     border-radius: 38px;
     position: relative;
     bottom:50px;
-    right:15px;
+    right:120px;
 }
 
 .counseling {
@@ -70,7 +70,7 @@ body {
     display: flex;
     justify-content: flex-end;
     position: relative;
-    right:250px
+    right:300px
 }
 
 .free {
@@ -85,7 +85,7 @@ body {
     border-radius: 40px; 
     position: relative;
     bottom:400px;
-    left:80px
+    left:300px
 }
 
 .document {
@@ -97,23 +97,27 @@ body {
     border: 1px solid rgb(184, 172, 172) ;
     position: relative;
     bottom:400px;
-    left:80px;
+    left:300px;
     }
 
 .circle {
     position: relative;
     bottom: 450px;
-    left: 50px;
+    text-align: center;
+    right:400px;
 }
 
 .big {
     width:200px;
+    position: relative;
+    left: 200px;
 }
 
 .small {
     width: 150px;
     position: relative;
     bottom: 30px;
+    left:200px;
 }
 
 .japanese {
@@ -126,7 +130,7 @@ body {
 .medium {
     width:400px;
     position: fixed;
-    right:100px
+    right:180px
 }
 
 
@@ -169,19 +173,44 @@ body {
 .text {
     width: 100%;
     color: white;
-    text-align: center;
     position: relative;
-    top:50px;
+    top:80px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 16px;
+
 }
 
 .explanation {
     font-size:30px;
     text-align: center;
+    font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+   font-size: 38px;
+   font-weight: 900;
+   letter-spacing: .1em;
+   line-height: 54px;
+   width: 100%;
 }
 
 .explanation_link {
     text-decoration: none;
     color: white;
+}
+
+.notes {
+    position: relative;
+    bottom:350px;
+    color:lightgray;
+    z-index: 3;
+    left:30px;
+    font-size: 15px;
+}
+
+.link_center{
+    text-align: center;
+    position: relative;
+    right: 500px;
 }
 
 @media screen and (max-width:1024px) {
@@ -235,8 +264,17 @@ body {
         top:100%;
         transform: translateY(-100%);
    }
-   .main{
-    left: 15px;
+   .main {
+        left: 15px;
+   }
+
+   .circle {
+        right:200px;
+   }
+
+   .link_center {
+        text-align: initial;
+        right:80px;
    }
  }
 
@@ -261,7 +299,6 @@ body {
     .circle {
         z-index: 2;
         top:30px;
-        left:10px;
         display: flex;
     }
 
@@ -300,5 +337,9 @@ body {
         position: relative;
         right:400px;
         top:400px;
+    }
+
+    .notes {
+        top:100px
     }
 }
